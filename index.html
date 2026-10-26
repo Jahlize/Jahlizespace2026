@@ -2,479 +2,82 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>𝘿𝙟 𝙅𝙖𝙝𝙡𝙞𝙯𝙚 𝙎𝙚𝙡𝙚𝙘𝙩𝙤𝙧 𝙓𝙖𝙩𝙨𝙥𝙖𝙘𝙚</title>
-
-<meta name="theme-color" content="#009b3a">
-<meta name="description" content="Positive Conexzion Crew - Reggae & Dancehall Radio">
-
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080d0a">
+<title>Jahlize Design | Galería & Reproductores</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html,body{
-height:100%;
-}
-
-body{
-
-font-family:'Poppins',sans-serif;
-
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.75)),
-url("https://img.freepik.com/fotos-premium/fondo-bandera-nacional-jamaica-bandera-jamaica_659987-25694.jpg?semt=ais_hybrid&w=740&q=80");
-
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-background-attachment:fixed;
-
-display:flex;
-justify-content:center;
-align-items:center;
-overflow:hidden;
-
-}
-
-/* partículas */
-
-body::before{
-
-content:"";
-position:fixed;
-inset:0;
-pointer-events:none;
-
-background:
-radial-gradient(circle,#00ff6630 2px,transparent 3px);
-
-background-size:80px 80px;
-
-animation:move 20s linear infinite;
-
-opacity:.45;
-
-}
-
-@keyframes move{
-
-from{transform:translateY(0);}
-to{transform:translateY(80px);}
-
-}
-
-/****************************/
-
-.card{
-
-width:390px;
-max-width:95%;
-
-background:rgba(0,0,0,.72);
-
-backdrop-filter:blur(14px);
-
-border-radius:28px;
-
-padding:30px;
-
-text-align:center;
-
-border:2px solid #00ff66;
-
-box-shadow:
-0 0 15px #00ff66,
-0 0 40px #009933;
-
-animation:fade .8s;
-
-}
-
-@keyframes fade{
-
-from{
-opacity:0;
-transform:translateY(30px);
-}
-
-to{
-opacity:1;
-transform:none;
-}
-
-}
-
-.logo{
-
-width:185px;
-height:185px;
-
-border-radius:50%;
-
-border:5px solid #00ff66;
-
-object-fit:cover;
-
-box-shadow:
-0 0 15px #00ff66,
-0 0 40px #00ff66;
-
-transition:.4s;
-
-}
-
-.logo:hover{
-
-transform:scale(1.05) rotate(3deg);
-
-}
-
-h1{
-
-font-family:'Russo One',sans-serif;
-
-margin-top:20px;
-
-color:#00ff66;
-
-font-size:30px;
-
-text-shadow:0 0 15px #00ff66;
-
-}
-
-.sub{
-
-color:#ffd700;
-
-font-size:15px;
-
-margin-top:10px;
-
-letter-spacing:2px;
-
-}
-
-/***************/
-
-audio{
-
-width:100%;
-margin-top:25px;
-filter:hue-rotate(60deg);
-
-}
-
-/***************/
-
-.play{
-
-margin-top:20px;
-
-padding:15px;
-
-width:100%;
-
-border:none;
-
-border-radius:50px;
-
-font-size:18px;
-
-font-weight:bold;
-
-cursor:pointer;
-
-background:linear-gradient(90deg,#009933,#00ff66);
-
-color:#000;
-
-transition:.3s;
-
-}
-
-.play:hover{
-
-transform:scale(1.05);
-
-box-shadow:0 0 20px #00ff66;
-
-}
-
-/***************/
-
-.eq{
-
-margin:28px auto;
-
-height:42px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:flex-end;
-
-gap:6px;
-
-}
-
-.eq span{
-
-display:block;
-
-width:8px;
-
-background:#00ff66;
-
-border-radius:20px;
-
-animation:eq .8s infinite ease-in-out;
-
-}
-
-.eq span:nth-child(1){height:15px;}
-.eq span:nth-child(2){height:25px;animation-delay:.2s;}
-.eq span:nth-child(3){height:35px;animation-delay:.4s;}
-.eq span:nth-child(4){height:20px;animation-delay:.6s;}
-.eq span:nth-child(5){height:30px;animation-delay:.8s;}
-.eq span:nth-child(6){height:18px;animation-delay:1s;}
-
-@keyframes eq{
-
-0%,100%{
-
-transform:scaleY(.4);
-
-}
-
-50%{
-
-transform:scaleY(1.6);
-
-}
-
-}
-
-/***************/
-
-.social{
-
-display:flex;
-
-justify-content:center;
-
-gap:12px;
-
-margin-top:10px;
-
-}
-
-.social a{
-
-text-decoration:none;
-
-padding:10px 18px;
-
-border-radius:40px;
-
-background:#111;
-
-color:#00ff66;
-
-font-size:14px;
-
-border:1px solid #00ff66;
-
-transition:.3s;
-
-}
-
-.social a:hover{
-
-background:#00ff66;
-
-color:#000;
-
-}
-
-/***************/
-
-footer{
-
-margin-top:25px;
-
-font-size:13px;
-
-color:#fff;
-
-line-height:1.7;
-
-opacity:.85;
-
-}
-
-.glow{
-
-color:#00ff66;
-
-font-weight:bold;
-
-}
-
-/***************/
-
-@media(max-width:500px){
-
-.card{
-
-padding:25px;
-
-}
-
-.logo{
-
-width:150px;
-height:150px;
-
-}
-
-h1{
-
-font-size:24px;
-
-}
-
-}
-
+:root{--bg:#080d0a;--panel:#101914;--panel2:#141f18;--line:#26372b;--text:#f1f7f1;--muted:#9aada0;--green:#39ef7a;--yellow:#f4d54b;--red:#ff4c55}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#153522 0,transparent 35%),radial-gradient(ellipse at 0% 65%,#1b2815 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.15;background-image:linear-gradient(#294331 1px,transparent 1px),linear-gradient(90deg,#294331 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 80%)}
+.app{display:flex;min-height:100vh;position:relative}.sidebar{width:245px;flex-shrink:0;background:#090f0bdf;border-right:1px solid var(--line);padding:25px 17px;display:flex;flex-direction:column;gap:24px;position:fixed;inset:0 auto 0 0;z-index:5;backdrop-filter:blur(16px)}
+.brand{display:flex;align-items:center;gap:12px;padding:0 8px 20px;border-bottom:1px solid var(--line)}.brand-mark{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--green),#126b37);display:grid;place-items:center;color:#041109;font-weight:1000;font-size:21px;box-shadow:0 0 25px #39ef7a24}.brand strong{display:block;font-size:14px;letter-spacing:.07em}.brand small{color:var(--muted);font-size:10px;letter-spacing:.15em}
+.nav-label{font-size:10px;letter-spacing:.18em;color:#718477;padding:0 12px;margin:0 0 8px}.nav{display:grid;gap:6px}.nav button{background:transparent;border:1px solid transparent;color:#aab9ad;text-align:left;padding:12px;border-radius:10px;cursor:pointer;font:600 13px inherit;display:flex;align-items:center;gap:12px;transition:.2s}.nav button:hover,.nav button.active{background:#17281b;border-color:#2b4932;color:white}.nav button.active .ico{color:var(--green)}.ico{width:20px;text-align:center;font-size:17px;color:#819787}.sidebar-foot{margin-top:auto;border:1px solid var(--line);background:#101a13;padding:14px;border-radius:13px}.live-dot{display:inline-block;width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 10px var(--green);margin-right:7px}.sidebar-foot strong{font-size:12px}.sidebar-foot p{font-size:11px;color:var(--muted);line-height:1.5;margin:8px 0 0}
+main{margin-left:245px;width:calc(100% - 245px);padding:35px clamp(18px,4vw,58px) 60px;z-index:1}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:42px}.crumb{font-size:11px;color:var(--muted);letter-spacing:.13em;text-transform:uppercase}.status{border:1px solid #2b5135;border-radius:999px;padding:8px 12px;color:#8ff5a9;font-size:11px;background:#102317}.hero{padding:clamp(22px,4vw,42px);border:1px solid #2b4932;border-radius:24px;background:linear-gradient(115deg,#13261aef,#0d1510f2 70%),linear-gradient(90deg,var(--green),var(--yellow),var(--red));box-shadow:0 20px 70px #0004;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-50px;top:-85px;border:1px solid #42e77724;box-shadow:0 0 0 25px #42e77708,0 0 0 55px #42e77706}.eyebrow{color:var(--green);font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}.hero h1{font-size:clamp(32px,5vw,55px);line-height:1.04;letter-spacing:-.04em;margin:15px 0 13px;max-width:700px}.hero h1 span{color:var(--green)}.hero p{max-width:600px;color:#b2c2b6;line-height:1.7;font-size:14px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.btn{border:1px solid #34543a;background:#18291c;color:white;padding:12px 16px;border-radius:10px;font-size:12px;font-weight:800;cursor:pointer}.btn.primary{background:var(--green);border-color:var(--green);color:#07120a}.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:35px 0 17px}.section-head h2{font-size:21px;margin:0;letter-spacing:-.02em}.section-head p{margin:6px 0 0;color:var(--muted);font-size:12px}.tag{font-size:10px;color:#b5c5b8;border:1px solid var(--line);border-radius:8px;padding:7px 9px}.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.service{background:linear-gradient(145deg,#142019,#0e1510);border:1px solid var(--line);border-radius:16px;padding:19px;cursor:pointer;transition:.22s;min-height:145px}.service:hover{border-color:#3e9d57;transform:translateY(-3px);box-shadow:0 14px 35px #0003}.service .sym{font-size:22px;margin-bottom:17px}.service h3{font-size:13px;letter-spacing:.06em;margin:0 0 7px}.service p{font-size:11px;color:var(--muted);margin:0}.service .price{color:var(--green);font-size:12px;font-weight:800;margin-top:13px}.content-view{display:none}.content-view.active{display:block}.gallery-head{display:flex;align-items:center;gap:13px;margin-bottom:20px}.back{background:#152119;border:1px solid var(--line);color:white;width:38px;height:38px;border-radius:10px;cursor:pointer;font-size:18px}.gallery-head h1{font-size:27px;margin:0}.gallery-head p{font-size:12px;color:var(--muted);margin:5px 0 0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}.filter{background:#111a14;border:1px solid var(--line);color:#aab8ad;border-radius:9px;padding:9px 13px;cursor:pointer;font-size:11px;font-weight:800}.filter.active{background:#1b3823;color:var(--green);border-color:#367848}.player-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.player-card{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:linear-gradient(145deg,#131e16,#0c120e);transition:.2s}.player-card:hover{border-color:#3c7949;transform:translateY(-2px)}.image-wrap{height:220px;background:#070a08;display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:zoom-in;position:relative}.image-wrap img{width:100%;height:100%;object-fit:contain;transition:transform .35s}.image-wrap:hover img{transform:scale(1.035)}.image-wrap .zoom{position:absolute;right:10px;bottom:10px;background:#000b;border:1px solid #ffffff30;border-radius:8px;padding:7px;font-size:11px}.player-info{padding:17px}.player-info h3{font-size:15px;margin:0 0 7px}.player-info p{font-size:12px;color:var(--muted);margin:0;line-height:1.5}.meta{display:flex;justify-content:space-between;align-items:center;margin-top:15px;gap:10px}.price{font-size:13px;color:var(--green);font-weight:900}.type{font-size:9px;letter-spacing:.12em;color:#d3ddcf;border:1px solid var(--line);padding:6px 8px;border-radius:7px}.radio-box{border:1px solid #31543a;background:linear-gradient(135deg,#13251a,#0c130e);border-radius:18px;padding:22px;max-width:700px}.radio-row{display:flex;align-items:center;gap:16px}.radio-icon{width:66px;height:66px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,#2de96e,#e4d347 75%,#e64b4b);color:#09120b;font-size:26px}.radio-title h3{margin:0 0 6px;font-size:18px}.radio-title p{margin:0;color:var(--muted);font-size:12px}.audio-controls{display:flex;align-items:center;gap:14px;margin-top:22px;flex-wrap:wrap}.play{width:48px;height:48px;border:0;border-radius:50%;background:var(--green);color:#061109;font-size:19px;font-weight:900;cursor:pointer}.audio-controls label{font-size:11px;color:var(--muted)}input[type=range]{accent-color:var(--green);width:min(220px,50vw)}.note{font-size:11px;color:var(--muted);line-height:1.6;margin-top:15px}.empty{padding:28px;border:1px dashed var(--line);border-radius:14px;color:var(--muted);font-size:13px}.footer{margin-top:45px;border-top:1px solid var(--line);padding-top:20px;color:#718477;font-size:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.mobile-menu{display:none}.modal{position:fixed;inset:0;background:#000e;z-index:20;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-inner{max-width:min(1000px,96vw);max-height:92vh;position:relative}.modal img{display:block;max-width:100%;max-height:84vh;object-fit:contain;border-radius:10px;box-shadow:0 20px 80px #000}.modal-title{color:#fff;font-size:12px;margin-top:10px}.close{position:absolute;right:-12px;top:-12px;width:36px;height:36px;border:1px solid #ffffff44;border-radius:50%;background:#17221a;color:white;font-size:20px;cursor:pointer}
+@media(max-width:950px){.sidebar{width:215px}.app main{margin-left:215px;width:calc(100% - 215px);padding:25px 20px}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.sidebar{position:sticky;inset:0 0 auto;width:100%;height:auto;padding:12px 14px;border-right:0;border-bottom:1px solid var(--line);display:block}.app{display:block}.brand{padding:0;border:0}.brand-mark{width:38px;height:38px}.nav-label,.nav,.sidebar-foot{display:none}.mobile-menu{display:block;margin-left:auto;background:#17281b;color:white;border:1px solid var(--line);border-radius:9px;padding:9px 12px}.brand{display:flex}.sidebar.menu-open .nav{display:grid;position:absolute;top:64px;left:10px;right:10px;background:#0b130d;border:1px solid var(--line);padding:10px;border-radius:13px;box-shadow:0 18px 40px #0008}.app main{margin:0;width:100%;padding:22px 15px 40px}.topbar{margin-bottom:20px}.hero{border-radius:18px}.hero h1{font-size:36px}.service-grid,.player-grid{grid-template-columns:1fr}.image-wrap{height:210px}.section-head{margin-top:28px}.status{font-size:9px}.topbar .crumb{font-size:9px}}
 </style>
-
 </head>
-
 <body>
-
-<div class="card">
-
-<img class="logo"
-src="https://xatimg.com/image/YQ8jLKepDiGb.png"
-alt="Positive Conexzion Crew">
-
-<h1>Ɗϳ JλнIιzε ՏҽIҽϲեօɾ☆</h1>
-
-<div class="sub">
-
-REGGAE • ROOTS • DANCEHALL
-
+<div class="app">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><div class="brand-mark">JD</div><div><strong>JAHLIZE DESIGN</strong><small>CREATIVE STUDIO</small></div><button class="mobile-menu" onclick="toggleMenu()">☰</button></div>
+ <div><p class="nav-label">MENÚ PRINCIPAL</p><nav class="nav">
+  <button class="active" data-view="inicio" onclick="showView('inicio',this)"><span class="ico">⌂</span> Inicio</button>
+  <button data-view="xatspace" onclick="showView('xatspace',this)"><span class="ico">✦</span> Xatspace</button>
+  <button data-view="pcback" onclick="showView('pcback',this)"><span class="ico">▣</span> Pcback & Packs</button>
+  <button data-view="fondos" onclick="showView('fondos',this)"><span class="ico">▧</span> Fondos sala</button>
+  <button data-view="reproductores" onclick="showView('reproductores',this)"><span class="ico">♫</span> Reproductores</button>
+  <button data-view="radio" onclick="showView('radio',this)"><span class="ico">◉</span> Radio planes</button>
+ </nav></div>
+ <div class="sidebar-foot"><strong><span class="live-dot"></span>Diseño & streaming</strong><p>Soluciones creativas para tu espacio, radio y comunidad online.</p></div>
+</aside>
+<main>
+ <div class="topbar"><div class="crumb">Jahlize Design / <span id="breadcrumb">Inicio</span></div><div class="status"><span class="live-dot"></span> CREATIVE STUDIO</div></div>
+ <section class="content-view active" id="view-inicio">
+  <div class="hero"><div class="eyebrow">✦ DISEÑO DIGITAL · RADIO · XAT</div><h1>Tu espacio. Tu estilo.<br><span>Tu identidad.</span></h1><p>Diseños personalizados, reproductores y recursos visuales para llevar tu proyecto al siguiente nivel. Explora la galería y encuentra el estilo que conecta contigo.</p><div class="actions"><button class="btn primary" onclick="showView('reproductores')">♫ Ver reproductores</button><button class="btn" onclick="showView('fondos')">Explorar galería ↗</button></div></div>
+  <div class="section-head"><div><h2>Explora nuestros servicios</h2><p>Elige una categoría para ver los recursos disponibles.</p></div><span class="tag">CATÁLOGO</span></div>
+  <div class="service-grid">
+   <article class="service" onclick="showView('xatspace')"><div class="sym">✦</div><h3>XATSPACE</h3><p>Espacios web con estilo propio</p><div class="price">Desde 2000 xats</div></article>
+   <article class="service" onclick="showView('pcback')"><div class="sym">▣</div><h3>PCBACK & PSTYLE</h3><p>Static, GIF y packs completos</p><div class="price">Desde 600 xats</div></article>
+   <article class="service" onclick="showView('fondos')"><div class="sym">▧</div><h3>FONDOS SALA</h3><p>Fondos y boxes en alta calidad</p><div class="price">Desde 1200 xats</div></article>
+   <article class="service" onclick="showView('reproductores')"><div class="sym">♫</div><h3>REPRODUCTORES</h3><p>Players HTML5, GIF y visualizer</p><div class="price">Desde 1500 xats</div></article>
+   <article class="service" onclick="showView('radio')"><div class="sym">◉</div><h3>RADIO PLANES</h3><p>Streaming y soporte para tu radio</p><div class="price">4 planes disponibles</div></article>
+  </div>
+ </section>
+ <section class="content-view" id="view-reproductores">
+  <div class="gallery-head"><button class="back" onclick="showView('inicio')">←</button><div><h1>Galería de reproductores</h1><p>Players visuales para tu radio y espacio online.</p></div></div>
+  <div class="filters"><button class="filter active" onclick="filterPlayers('all',this)">TODOS</button><button class="filter" onclick="filterPlayers('html5',this)">HTML5 / PRO</button><button class="filter" onclick="filterPlayers('gif',this)">GIF / NORMAL</button></div>
+  <div class="player-grid" id="playerGrid">
+   <article class="player-card" data-type="html5"><div class="image-wrap" onclick="openModal('https://xatimg.com/image/8kGRq3AkFky4.png','Reproductor HTML5 Pro')"><img loading="lazy" src="https://xatimg.com/image/8kGRq3AkFky4.png" alt="Imagen 1 - Reproductor HTML5 Pro" onerror="this.alt='No se pudo cargar la imagen';this.parentElement.style.color='#9aada0'"><span class="zoom">⌕ Ampliar</span></div><div class="player-info"><h3>Reproductor HTML5 Pro</h3><p>Diseño moderno para presentar tu radio con una apariencia profesional.</p><div class="meta"><span class="price">2000 xats</span><span class="type">HTML5 · PRO</span></div></div></article>
+   <article class="player-card" data-type="gif"><div class="image-wrap" onclick="openModal('https://xatimg.com/image/T3rIFuqz9aEO.png','Reproductor Normal / GIF')"><img loading="lazy" src="https://xatimg.com/image/T3rIFuqz9aEO.png" alt="Imagen 2 - Reproductor Normal" onerror="this.alt='No se pudo cargar la imagen';this.parentElement.style.color='#9aada0'"><span class="zoom">⌕ Ampliar</span></div><div class="player-info"><h3>Reproductor Normal</h3><p>Una alternativa visual sencilla y personalizable para tu espacio.</p><div class="meta"><span class="price">2000 xats</span><span class="type">GIF · NORMAL</span></div></div></article>
+   <article class="player-card" data-type="html5"><div class="image-wrap" onclick="openModal('https://xatimg.com/image/aqrtRj1DAenc.png','Reproductor Avanzado')"><img loading="lazy" src="https://xatimg.com/image/aqrtRj1DAenc.png" alt="Reproductor avanzado"><span class="zoom">⌕ Ampliar</span></div><div class="player-info"><h3>Reproductor Avanzado</h3><p>Player avanzado para una presentación más completa.</p><div class="meta"><span class="price">2000 xats</span><span class="type">HTML5 · PRO</span></div></div></article>
+   <article class="player-card" data-type="gif"><div class="image-wrap" onclick="openModal('https://xatimg.com/image/ZdddVI2X3Vfy.png','Reproductor Básico')"><img loading="lazy" src="https://xatimg.com/image/ZdddVI2X3Vfy.png" alt="Reproductor básico"><span class="zoom">⌕ Ampliar</span></div><div class="player-info"><h3>Reproductor Básico</h3><p>Una opción ligera para integrar la música en tu página.</p><div class="meta"><span class="price">1500 xats</span><span class="type">NORMAL</span></div></div></article>
+  </div>
+ </section>
+ <section class="content-view" id="view-radio">
+  <div class="gallery-head"><button class="back" onclick="showView('inicio')">←</button><div><h1>Radio & Streaming</h1><p>Prueba la señal en vivo de Conexzion Crew.</p></div></div>
+  <div class="radio-box"><div class="radio-row"><div class="radio-icon">♫</div><div class="radio-title"><h3>Conexzion Crew Radio</h3><p><span class="live-dot"></span>Reggae · Dancehall · Black Music</p></div></div><div class="audio-controls"><button class="play" id="playBtn" onclick="toggleAudio()">▶</button><label id="audioStatus">Listo para reproducir</label><label for="volume">Volumen</label><input id="volume" type="range" min="0" max="1" step=".01" value=".7" oninput="setVolume(this.value)"></div><p class="note">Pulsa reproducir para iniciar la transmisión. Si el servidor no está disponible, verifica la URL del streaming. La reproducción automática puede estar bloqueada por el navegador.</p></div>
+ </section>
+ <section class="content-view" id="view-xatspace"><div class="gallery-head"><button class="back" onclick="showView('inicio')">←</button><div><h1>Xatspace</h1><p>Diseños personalizados para tu espacio.</p></div></div><div class="empty">Próximamente: galería de diseños Xatspace. Contacta para solicitar un modelo personalizado.</div></section>
+ <section class="content-view" id="view-pcback"><div class="gallery-head"><button class="back" onclick="showView('inicio')">←</button><div><h1>Pcback & Packs</h1><p>Recursos gráficos estáticos y animados.</p></div></div><div class="empty">Próximamente: galería de PCBACK, PSTYLE y packs GIF.</div></section>
+ <section class="content-view" id="view-fondos"><div class="gallery-head"><button class="back" onclick="showView('inicio')">←</button><div><h1>Fondos de sala</h1><p>Fondos y boxes para personalizar tu sala.</p></div></div><div class="empty">Próximamente: galería de fondos y boxes. Puedes agregar imágenes a esta sección.</div></section>
+ <footer class="footer"><span>© <span id="year"></span> JAHLIZE DESIGN · Todos los derechos reservados.</span><span>Diseño digital · Radio · Xat</span></footer>
+</main>
 </div>
-
-<audio
-id="radio"
-controls
-autoplay
-preload="none">
-
-<source
-src="https://stream.zeno.fm/mwq02npsm2zuv"
-type="audio/mpeg">
-
-</audio>
-
-<button
-class="play"
-onclick="toggleRadio()">
-
-▶ ESCUCHAR EN VIVO
-
-</button>
-
-<div class="eq">
-
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-
-</div>
-
-<div class="social">
-
-<a href="https://conexzion.cl" target="_blank">
-WEB
-</a>
-
-<a href="https://facebook.com" target="_blank">
-FACEBOOK
-</a>
-
-<a href="https://instagram.com" target="_blank">
-INSTAGRAM
-</a>
-
-</div>
-
-<footer>
-
-<div class="glow">
-
-🇯🇲 ONE LOVE 🇯🇲
-
-</div>
-
-Owner En Positive Conexzion Crew<br>
-
-Reggae • Roots • Dancehall<br>
-
-Streaming 24 Horas
-
-</footer>
-
-</div>
-
+<div class="modal" id="imageModal" onclick="closeModal(event)"><div class="modal-inner"><button class="close" onclick="closeModal(event)">×</button><img id="modalImg" src="" alt=""><div class="modal-title" id="modalTitle"></div></div></div>
+<audio id="radioAudio" preload="none" crossorigin="anonymous" src="https://conexzion.net/8002/stream"></audio>
 <script>
-
-const radio=document.getElementById("radio");
-const button=document.querySelector(".play");
-
-function toggleRadio(){
-
-if(radio.paused){
-
-radio.play();
-
-button.innerHTML="⏸ PAUSAR";
-
-}else{
-
-radio.pause();
-
-button.innerHTML="▶ ESCUCHAR EN VIVO";
-
-}
-
-}
-
-radio.addEventListener("play",()=>{
-
-button.innerHTML="⏸ PAUSAR";
-
-});
-
-radio.addEventListener("pause",()=>{
-
-button.innerHTML="▶ ESCUCHAR EN VIVO";
-
-});
-
+const titles={inicio:'Inicio',xatspace:'Xatspace',pcback:'Pcback & Packs',fondos:'Fondos sala',reproductores:'Reproductores',radio:'Radio & Streaming'};
+function showView(name,button){document.querySelectorAll('.content-view').forEach(v=>v.classList.remove('active'));const view=document.getElementById('view-'+name);if(view)view.classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===name));document.getElementById('breadcrumb').textContent=titles[name]||name;document.getElementById('sidebar').classList.remove('menu-open');window.scrollTo({top:0,behavior:'smooth'});}
+function toggleMenu(){document.getElementById('sidebar').classList.toggle('menu-open')}
+function filterPlayers(type,btn){document.querySelectorAll('.filters .filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.player-card').forEach(c=>c.style.display=(type==='all'||c.dataset.type===type)?'':'none')}
+function openModal(src,title){document.getElementById('modalImg').src=src;document.getElementById('modalTitle').textContent=title;document.getElementById('imageModal').classList.add('open')}
+function closeModal(e){if(e.target.id==='imageModal'||e.target.classList.contains('close')){document.getElementById('imageModal').classList.remove('open');document.getElementById('modalImg').src=''}}
+const audio=document.getElementById('radioAudio'),playBtn=document.getElementById('playBtn'),audioStatus=document.getElementById('audioStatus');
+async function toggleAudio(){if(!audio.paused){audio.pause();playBtn.textContent='▶';audioStatus.textContent='Pausado';return}audioStatus.textContent='Conectando…';try{await audio.play();playBtn.textContent='Ⅱ';audioStatus.textContent='Reproduciendo en vivo'}catch(e){audioStatus.textContent='No se pudo conectar. Comprueba el streaming.';playBtn.textContent='▶'}}
+function setVolume(v){audio.volume=Number(v)}
+audio.addEventListener('playing',()=>{playBtn.textContent='Ⅱ';audioStatus.textContent='Reproduciendo en vivo'});audio.addEventListener('waiting',()=>audioStatus.textContent='Cargando señal…');audio.addEventListener('error',()=>{playBtn.textContent='▶';audioStatus.textContent='Error de conexión al streaming'});audio.volume=.7;
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('imageModal').classList.remove('open')});document.getElementById('year').textContent=new Date().getFullYear();
 </script>
-
 </body>
 </html>
